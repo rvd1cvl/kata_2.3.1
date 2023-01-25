@@ -9,12 +9,10 @@ import web.model.User;
 import web.service.UserService;
 
 @Controller
-@Transactional
 public class UserController {
 
     private final UserService userService;
 
-    @Autowired
     public UserController(UserService userService) {
     this.userService = userService;
 }
